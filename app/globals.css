@@ -2,26 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
+  overscroll-behavior: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.wrapper {
+  display: inline-flex;
+}
+
+.dynamic-txts {
+  list-style: none;
+  height: 1.5em;
+  line-height: 1.25em;
+  overflow: hidden;
+}
+
+.dynamic-txts li {
+  top: 0;
+  position: relative;
+  animation: slide 9s steps(3) infinite;
+}
+
+.dynamic-txts li span {
+  position: relative;
+}
+.dynamic-txts li span::after {
+  content: "";
+  left: 0;
+  position: absolute;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid white;
+  animation: typing 3s steps(20) infinite;
+}
+
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@keyframes slide {
+  100% {
+    top: -180px;
+  }
 }
