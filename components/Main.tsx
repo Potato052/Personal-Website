@@ -24,6 +24,15 @@ const Main = () => {
               <span>A Problem Solver</span>
             </li>
           </ul>
+          <div className="absolute top-[85vh] sm:top-[100vh] sm:left-[27vw] max-w-2xl">
+            <p className="font-bold text-xl text-wrap">
+              The only way to do great work is to love what you do. If you haven't
+              found it yet, keep looking. Don't settle. As with all matters of the
+              heart, you'll know when you find it.
+            </p>
+            <p className="font-bold">Steve Jobs</p>
+          </div>
+
         </div>
       </div>
     </div>
