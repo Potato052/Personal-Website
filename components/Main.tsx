@@ -1,26 +1,29 @@
+import Image from "next/image";
+
 const Main = () => {
   return (
     <div className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto flex justify-center items-center">
-        <div className="grid grid-cols-2">
-          <div className="mx-auto">This is the 3D object</div>
-
-          <div className="text-left">
-            <h1 className="py-4 uppercase text-7xl sm:text-5xl md:text-6xl">
-              Nigel Tan
-            </h1>
-            <ul className="dynamic-txts text-5xl">
-              <li>
-                <span>Software Engineer</span>
-              </li>
-              <li>
-                <span>Full Stack Developer</span>
-              </li>
-              <li>
-                <span>Problem Solver</span>
-              </li>
-            </ul>
-          </div>
+        <div className="">
+          <img
+            src="/mf-avatar.svg"
+            alt="/"
+            className="flex justify-center items-center ml-[150px]"
+          />
+          <h1 className="py-4 text-gray-700 text-6xl font-bold">
+            Hi I'm <span className="text-blue-500">Nigel</span>
+          </h1>
+          <ul className="dynamic-txts text-5xl font-bold text-gray-700">
+            <li>
+              <span>A Software Engineer</span>
+            </li>
+            <li>
+              <span>A Full Stack Developer</span>
+            </li>
+            <li>
+              <span>A Problem Solver</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
