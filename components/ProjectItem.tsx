@@ -12,12 +12,12 @@ interface Project {
 
 const ProjectItem = ({ title, description, image, link, techs }: Project) => {
   return (
-    <div className="group relative cursor-pointer items-center justify-center rounded-lg overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+    <div className="group relative cursor-pointer items-center justify-center rounded-lg overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 max-w-[596px] max-h-[396px]">
       <div className="h-full w-full object-cover transition-transform duration-500 group">
         <Image
           className="rounded-xl w-full h-full object-cover object-center"
           src={image}
-          alt="/"
+          alt={title}
           width={500}
           height={300}
         />

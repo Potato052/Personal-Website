@@ -11,7 +11,7 @@ const Main = () => {
             className="flex justify-center items-center ml-[150px]"
           />
           <h1 className="py-4 text-gray-700 text-6xl font-bold">
-            Hi I'm <span className="text-blue-500">Nigel</span>
+            Hi I'm <span className="text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text">Nigel</span>
           </h1>
           <ul className="dynamic-txts text-5xl font-bold text-gray-700">
             <li>
