@@ -1,7 +1,6 @@
-import Image from "next/image";
 import TechIcon from "./TechIcon";
 
-const about = () => {
+const About = () => {
   return (
     <div id='about' className="w-full md:h-screen p-2 flex items-center py-16">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-2 gap-28 pl-5">
@@ -10,9 +9,9 @@ const about = () => {
             About
           </h2>
           <p>
-            Hi, I'm Nigel! I recently finished my Bachelor's degree in Computer
-            Science University of Toronto. I'm a fullstack software developer
-            with over 6 months of industry experience. I'm passionate about
+            Hi, I&apos;m Nigel! I recently finished my bachelor&apos;s degree in computer
+            science University of Toronto. I&apos;m a fullstack software developer
+            with over 6 months of industry experience. I&apos;m passionate about
             learning new technologies and keep myself up to date with latest
             technology trends. Though I am most proficient in building
             application with react, python and java, I am a quick learner and
@@ -54,4 +53,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

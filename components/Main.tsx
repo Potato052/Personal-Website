@@ -5,10 +5,12 @@ const Main = () => {
     <div className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto flex justify-center items-center">
         <div className="">
-          <img
+          <Image
             src="/mf-avatar.svg"
             alt="/"
             className="flex justify-center items-center ml-[28%]"
+            width={217}
+            height={237}
           />
           <h1 className="py-4 text-6xl font-bold text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text">
             Nigel Tan

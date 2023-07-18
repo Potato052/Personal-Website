@@ -3,7 +3,7 @@ const Contact = () => {
     <section id="contact" className="text-center bg-neutral-900 py-10">
       <div className="mx-auto max-w-[700px] md:px-3">
         <h2 className="mb-12 text-3xl font-bold text-white">
-          Let's work together
+          Let&apos;s work together
         </h2>
         <form
           className="text-white"
@@ -15,7 +15,7 @@ const Contact = () => {
               type="text"
               name="name"
               required
-              className="peer  min-h-[auto] w-full border-b border-white bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear motion-reduce:transition-none"
+              className="peer min-h-[auto] w-full border-b border-white bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear motion-reduce:transition-none"
             />
             <label className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary  motion-reduce:transition-none">
               Name

@@ -2,9 +2,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
-const navbar = () => {
+const Navbar = () => {
   const [nav, setNav] = useState(false);
   return (
     <div className="fixed w-full h-20 bg-white z-[100]">
@@ -79,4 +79,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;
