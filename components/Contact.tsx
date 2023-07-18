@@ -1,10 +1,36 @@
+import { BsFillPersonLinesFill } from "react-icons/bs";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+
 const Contact = () => {
   return (
     <section id="contact" className="text-center bg-neutral-900 py-10">
       <div className="mx-auto max-w-[700px] md:px-3">
-        <h2 className="mb-12 text-3xl font-bold text-white">
-          Let&apos;s work together
-        </h2>
+        <h2 className="mb-6 text-3xl font-bold text-white">Contact Me</h2>
+        <div className="flex items-center justify-center max-w-[330px] m-auto">
+          <a
+            href="https://www.linkedin.com/in/nigel-tan-a1808a250/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="mr-5 rounded-full bg-white p-3 cursor-pointer hover:scale-110 ease-in duration-300 ">
+              <FaLinkedinIn />
+            </div>
+          </a>
+          <a
+            href="https://github.com/Potato052"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="mr-5 rounded-full bg-white p-3 cursor-pointer hover:scale-110 ease-in duration-300">
+              <FaGithub />
+            </div>
+          </a>
+          <a href="/dummy.pdf" target="_blank">
+            <div className="rounded-full bg-white p-3 cursor-pointer hover:scale-110 ease-in duration-300">
+              <BsFillPersonLinesFill />
+            </div>
+          </a>
+        </div>
         <form
           className="text-white"
           action="https://www.google.com/"
