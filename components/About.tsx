@@ -3,7 +3,7 @@ import TechIcon from "./TechIcon";
 
 const about = () => {
   return (
-    <div className="w-full md:h-screen p-2 flex items-center py-16">
+    <div id='about' className="w-full md:h-screen p-2 flex items-center py-16">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-2 gap-28 pl-5">
         <div>
           <h2 className="text-3xl sm:text-4xl uppercase font-bold py-4">
@@ -25,35 +25,28 @@ const about = () => {
           <h2 className="text-3xl sm:text-4xl uppercase font-bold py-4">
             Skills
           </h2>
-          <div className="flex flex-row flex-wrap mb-4">
+          <div className="flex flex-wrap mb-4">
             <TechIcon name="HTML" file="html.svg" />
             <TechIcon name="CSS" file="css.svg" />
-            <TechIcon name="JavaScript" file="javascript.svg" css="max-h-[55px] mt-[2px]" />
+            <TechIcon name="JavaScript"file="javascript.svg"css="max-h-[55px] mt-[2px]"/>
             <TechIcon name="TypeScript" file="typescript.svg" />
             <TechIcon name="React" file="react.svg" />
-            <TechIcon name="Nextjs" file="nextjs.svg"/>
-          </div>
-          <div className="flex flex-row flex-wrap mb-4">
-            <TechIcon name="NodeJs" file="node2.png"/>
+            <TechIcon name="Nextjs" file="nextjs.svg" />
+            <TechIcon name="NodeJs" file="node2.png" />
             <TechIcon name="C" file="c.png" />
             <TechIcon name="Python" file="python.svg" />
             <TechIcon name="Java" file="java.svg" />
             <TechIcon name="Django" file="django.svg" />
             <TechIcon name="PostgreSQL" file="postgresql.svg" />
-          </div>
-          <div className="flex flex-row flex-wrap mb-4">
             <TechIcon name="MongoDB" file="mongo.svg" />
             <TechIcon name="Neo4j" file="neo4j.svg" />
-            <TechIcon name="firebase" file="firebase.svg" css="max-h-[60px]"/>
+            <TechIcon name="firebase" file="firebase.svg" css="max-h-[60px]" />
             <TechIcon name="Git" file="git.svg" />
             <TechIcon name="Docker" file="docker.svg" />
             <TechIcon name="Bash" file="bash.png" />
-          </div>
-          <div className="flex flex-row flex-wrap mb-4">
             <TechIcon name="Vite" file="vite.svg" />
             <TechIcon name="Tailwind" file="tailwind.svg" />
             <TechIcon name="Bootstrap" file="bootstrap.svg" />
-            
           </div>
         </div>
       </div>
