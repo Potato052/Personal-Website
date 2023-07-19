@@ -29,7 +29,7 @@ const Main = () => {
               <span>Problem Solver</span>
             </li>
           </ul>
-          <div className="absolute top-[90%] left-[1%] sm::left-[33%] px-3 sm:px-0">
+          <div className="absolute top-[90%] left-[1%] sm:left-[33%] px-3 sm:px-0">
             <p className="font-bold text-xl text-wrap">
               The only way to do great work is to love what you do.
             </p>
