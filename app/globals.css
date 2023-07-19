@@ -14,23 +14,41 @@ body {
   display: inline-flex;
 }
 
-.dynamic-txts {
+.dynamic-txts-md {
   list-style: none;
   height: 1.5em;
   line-height: 1.25em;
   overflow: hidden;
 }
 
-.dynamic-txts li {
+.dynamic-txts-sm {
+  list-style: none;
+  height: 1.5em;
+  line-height: 1.25em;
+  overflow: hidden;
+}
+
+.dynamic-txts-md li {
   top: 0;
   position: relative;
   animation: slide 9s steps(3) infinite;
 }
 
-.dynamic-txts li span {
+.dynamic-txts-sm li {
+  top: 0;
+  position: relative;
+  animation: slide-sm 9s steps(3) infinite;
+}
+
+.dynamic-txts-md li span {
   position: relative;
 }
-.dynamic-txts li span::after {
+
+.dynamic-txts-sm li span {
+  position: relative;
+}
+
+.dynamic-txts-md li span::after {
   content: "";
   left: 0;
   position: absolute;
@@ -39,6 +57,17 @@ body {
   width: 100%;
   border-left: 2px solid white;
   animation: typing 3s steps(20) infinite;
+}
+
+.dynamic-txts-sm li span::after {
+  content: "";
+  left: 0;
+  position: absolute;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid white;
+  animation: typing 2.9s steps(20) infinite;
 }
 
 @keyframes typing {
@@ -54,5 +83,11 @@ body {
 @keyframes slide {
   100% {
     top: -180px;
+  }
+}
+
+@keyframes slide-sm {
+  100% {
+    top: -90px;
   }
 }
