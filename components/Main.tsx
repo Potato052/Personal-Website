@@ -8,14 +8,17 @@ const Main = () => {
           <Image
             src="/mf-avatar.svg"
             alt="/"
-            className="flex justify-center items-center ml-[7%] md:ml-[28%]"
+            className="flex justify-center items-center ml-[14%] md:ml-[28%]"
             width={217}
             height={237}
           />
-          <h1 className="py-4 text-6xl font-bold text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text">
+          <h1 className="py-4 text-5xl sm:text-6xl font-bold text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text">
             Nigel Tan
           </h1>
-          <ul className="dynamic-txts text-5xl font-bold text-gray-700">
+          <h2 className="sm:hidden text-3xl font-bold text-gray-700">
+            Full Stack Developer
+          </h2>
+          <ul className="hidden sm:block dynamic-txts text-5xl font-bold text-gray-700">
             <li>
               <span>Software Engineer</span>
             </li>
@@ -26,7 +29,7 @@ const Main = () => {
               <span>Problem Solver</span>
             </li>
           </ul>
-          <div className="absolute top-[90%] sm:left-[17%] md:left-[33%] px-3 md:px-0">
+          <div className="absolute top-[90%] left-[1%] sm::left-[33%] px-3 sm:px-0">
             <p className="font-bold text-xl text-wrap">
               The only way to do great work is to love what you do.
             </p>

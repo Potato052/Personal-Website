@@ -43,14 +43,14 @@ const Navbar = () => {
               </Link>
               <div
                 onClick={() => setNav(!nav)}
-                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
+                className="rounded-full p-3 cursor-pointer"
               >
                 <AiOutlineClose />
               </div>
             </div>
           </div>
           <div className="py-4 flex flex-col justify-center items-center text-center">
-            <ul className="uppercase">
+            <ul className="uppercase mt-[25%]">
               <Link href="/">
                 <li onClick={() => setNav(false)} className="py-4 font-bold">
                   Home
