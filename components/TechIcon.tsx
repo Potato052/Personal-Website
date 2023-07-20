@@ -19,6 +19,9 @@ const TechIcon = ({ name, file, css }: TechIconProps) => {
       <span className="group-hover:opacity-100 bg-slate-200 transition-opacity shadow-xl px-1 text-sm text-black rounded-md absolute left-1/2 -translate-x-1/2 opacity-0 mx-auto font-semibold z-[100]">
         {name}
       </span>
+      <div className="">
+
+      </div>
     </div>
   );
 };

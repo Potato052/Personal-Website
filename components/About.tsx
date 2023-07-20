@@ -2,32 +2,37 @@ import TechIcon from "./TechIcon";
 
 const About = () => {
   return (
-    <div id='about' className="w-full md:h-screen p-2 flex items-center py-16">
+    <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-2 gap-28 pl-5">
         <div>
-          <h2 className="text-3xl sm:text-4xl uppercase font-bold py-4">
+          <h2 className="text-3xl sm:text-4xl uppercase font-bold py-4 sm:text-left text-center mr-9 sm:mr-0">
             About
           </h2>
-          <p>
-            Hi, I&apos;m Nigel! I recently finished my bachelor&apos;s degree in computer
-            science University of Toronto. I&apos;m a fullstack software developer
-            with over 6 months of industry experience. I&apos;m passionate about
-            learning new technologies and keep myself up to date with latest
-            technology trends. Though I am most proficient in building
-            application with react, python and java, I am a quick learner and
-            can pick up new tech stacks as needed. I am currently looking for
-            full time opportunities as a software developer. Feel free to
-            contact me if you have any questions or just want to say hi!
+          <p className="text-justify mr-5 text-sm/5 sm:text-left sm:mr-0 sm:text-lg">
+            Hi, I&apos;m Nigel! I recently finished my bachelor&apos;s degree in
+            computer science University of Toronto. I&apos;m a fullstack
+            software developer with over 6 months of industry experience.
+            I&apos;m passionate about learning new technologies and keep myself
+            up to date with latest technology trends. Though I am most
+            proficient in building application with react, python and java, I am
+            a quick learner and can pick up new tech stacks as needed. I am
+            currently looking for full time opportunities as a software
+            developer. Feel free to contact me if you have any questions or just
+            want to say hi!
           </p>
         </div>
         <div>
-          <h2 className="text-3xl sm:text-4xl uppercase font-bold py-4">
+          <h2 className="text-3xl sm:text-4xl uppercase font-bold py-4 text-center mr-9 sm:ml-3 sm:text-left">
             Skills
           </h2>
-          <div className="flex flex-wrap mb-4">
+          <div className="flex flex-wrap mb-4 ml-4 sm:ml-0">
             <TechIcon name="HTML" file="html.svg" />
             <TechIcon name="CSS" file="css.svg" />
-            <TechIcon name="JavaScript"file="javascript.svg"css="max-h-[55px] mt-[2px]"/>
+            <TechIcon
+              name="JavaScript"
+              file="javascript.svg"
+              css="max-h-[55px] mt-[2px]"
+            />
             <TechIcon name="TypeScript" file="typescript.svg" />
             <TechIcon name="React" file="react.svg" />
             <TechIcon name="Nextjs" file="nextjs.svg" />

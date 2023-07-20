@@ -1,11 +1,11 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+'use client'
+import Image from 'next/image'
+import Link from 'next/link'
+import { useState } from 'react'
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(false)
   return (
     <div className="fixed w-full h-20 bg-white z-[100]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
@@ -32,8 +32,8 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? " fixed left-0 top-0 w-full h-full bg-white p-10 ease-in duration-500"
-              : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+              ? ' fixed left-0 top-0 w-full h-full bg-white p-10 ease-in duration-500'
+              : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
           }
         >
           <div>
@@ -76,7 +76,7 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
