@@ -9,16 +9,16 @@ const Contact = () => {
   const [message, setMessage] = useState("");
 
   return (
-    <section id="contact" className="text-center bg-neutral-900 py-10">
+    <section id="contact" className="bg-neutral-900 py-10 text-center">
       <div className="mx-auto max-w-[700px] md:px-3">
         <h2 className="mb-6 text-3xl font-bold text-white">Contact Me</h2>
-        <div className="flex items-center justify-center max-w-[330px] m-auto">
+        <div className="m-auto flex max-w-[330px] items-center justify-center">
           <a
             href="https://www.linkedin.com/in/nigel-tan-a1808a250/"
             target="_blank"
             rel="noreferrer"
           >
-            <div className="mr-5 rounded-full bg-white p-3 cursor-pointer hover:scale-110 ease-in duration-300 ">
+            <div className="mr-5 cursor-pointer rounded-full bg-white p-3 duration-300 ease-in hover:scale-110 ">
               <FaLinkedinIn />
             </div>
           </a>
@@ -27,12 +27,12 @@ const Contact = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="mr-5 rounded-full bg-white p-3 cursor-pointer hover:scale-110 ease-in duration-300">
+            <div className="mr-5 cursor-pointer rounded-full bg-white p-3 duration-300 ease-in hover:scale-110">
               <FaGithub />
             </div>
           </a>
           <a href="/resume.pdf" target="_blank">
-            <div className="rounded-full bg-white p-3 cursor-pointer hover:scale-110 ease-in duration-300">
+            <div className="cursor-pointer rounded-full bg-white p-3 duration-300 ease-in hover:scale-110">
               <BsFillPersonLinesFill />
             </div>
           </a>
@@ -49,14 +49,14 @@ const Contact = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
-              className="peer min-h-[auto] w-full border-b border-white bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear motion-reduce:transition-none"
+              className="peer min-h-[auto] w-full border-b border-white bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear motion-reduce:transition-none"
             />
 
             <label
               className={
                 name
-                  ? "-translate-y-[0.9rem] scale-[0.8] pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] motion-reduce:transition-none"
-                  : "pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] motion-reduce:transition-none"
+                  ? "pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] -translate-y-[0.9rem] scale-[0.8] truncate pt-[0.37rem] leading-[1.6] transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] motion-reduce:transition-none"
+                  : "pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] motion-reduce:transition-none"
               }
             >
               Name
@@ -69,15 +69,15 @@ const Contact = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="peer min-h-[auto] w-full border-b border-white bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear motion-reduce:transition-none"
+              className="peer min-h-[auto] w-full border-b border-white bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear motion-reduce:transition-none"
             />
             <label
               id="emailLabel"
               htmlFor="email"
               className={
                 email
-                  ? "-translate-y-[0.9rem] scale-[0.8] pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] motion-reduce:transition-none"
-                  : "pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] motion-reduce:transition-none"
+                  ? "pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] -translate-y-[0.9rem] scale-[0.8] truncate pt-[0.37rem] leading-[1.6] transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] motion-reduce:transition-none"
+                  : "pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] motion-reduce:transition-none"
               }
             >
               Email
@@ -85,7 +85,7 @@ const Contact = () => {
           </div>
           <div className="relative mb-5">
             <textarea
-              className="peer min-h-[auto] w-full border-b border-white bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear motion-reduce:transition-none"
+              className="peer min-h-[auto] w-full border-b border-white bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear motion-reduce:transition-none"
               rows={5}
               name="message"
               value={message}
@@ -96,8 +96,8 @@ const Contact = () => {
               htmlFor="message"
               className={
                 message
-                  ? "-translate-y-[0.9rem] scale-[0.8] pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] motion-reduce:transition-none"
-                  : "pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] motion-reduce:transition-none"
+                  ? "pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] -translate-y-[0.9rem] scale-[0.8] truncate pt-[0.37rem] leading-[1.6] transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] motion-reduce:transition-none"
+                  : "pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] motion-reduce:transition-none"
               }
             >
               Message
@@ -105,7 +105,7 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            className="mb-6 inline-block w-full rounded px-6 pt-2.5 pb-2 text-xs font-medium uppercase shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+            className="hover:bg-primary-600 mb-6 inline-block w-full rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
           >
             Send
           </button>

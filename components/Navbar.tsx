@@ -1,14 +1,14 @@
-'use client'
-import Image from 'next/image'
-import Link from 'next/link'
-import { useState } from 'react'
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false)
+  const [nav, setNav] = useState(false);
   return (
-    <div className="fixed w-full h-20 bg-white z-[100]">
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+    <div className="fixed z-[100] h-20 w-full bg-white">
+      <div className="flex h-full w-full items-center justify-between px-2 2xl:px-16">
         <Image src="/logo.jpg" alt="/" width={60} height={50} />
         <div>
           <ul className="hidden md:flex">
@@ -32,8 +32,8 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? ' fixed left-0 top-0 w-full h-full bg-white p-10 ease-in duration-500'
-              : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
+              ? " fixed left-0 top-0 h-full w-full bg-white p-10 duration-500 ease-in"
+              : "fixed left-[-100%] top-0 p-10 duration-500 ease-in"
           }
         >
           <div>
@@ -43,14 +43,14 @@ const Navbar = () => {
               </Link>
               <div
                 onClick={() => setNav(!nav)}
-                className="rounded-full p-3 cursor-pointer"
+                className="cursor-pointer rounded-full p-3"
               >
                 <AiOutlineClose />
               </div>
             </div>
           </div>
-          <div className="py-4 flex flex-col justify-center items-center text-center">
-            <ul className="uppercase mt-[25%]">
+          <div className="flex flex-col items-center justify-center py-4 text-center">
+            <ul className="mt-[25%] uppercase">
               <Link href="/">
                 <li onClick={() => setNav(false)} className="py-4 font-bold">
                   Home
@@ -76,7 +76,7 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

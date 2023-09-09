@@ -8,7 +8,7 @@ interface TechIconProps {
 
 const TechIcon = ({ name, file, css }: TechIconProps) => {
   return (
-    <div className="group relative md:mr-6 p-1 mr-1">
+    <div className="group relative mr-1 p-1 md:mr-6">
       <Image
         src={`/icons/${file}`}
         alt={name}
@@ -16,12 +16,10 @@ const TechIcon = ({ name, file, css }: TechIconProps) => {
         height={40}
         className={css}
       />
-      <span className="group-hover:opacity-100 bg-slate-200 transition-opacity shadow-xl px-1 text-sm text-black rounded-md absolute left-1/2 -translate-x-1/2 opacity-0 mx-auto font-semibold z-[100]">
+      <span className="absolute left-1/2 z-[100] mx-auto -translate-x-1/2 rounded-md bg-slate-200 px-1 text-sm font-semibold text-black opacity-0 shadow-xl transition-opacity group-hover:opacity-100">
         {name}
       </span>
-      <div className="">
-
-      </div>
+      <div className=""></div>
     </div>
   );
 };
