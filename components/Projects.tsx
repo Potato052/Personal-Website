@@ -30,18 +30,18 @@ const Projects = () => {
             link="https://github.com/Potato052/ThreeMusketeers"
           />
           <ProjectItem
-            title="MeepoIsYou"
-            image="/projects/meepoisyou-card.webp"
-            description="A homage of the popular puzzle game Baba Is You, built using Pygame."
-            techs={["Python", "Pygame"]}
-            link="#"
+            title="PlayClip"
+            image="/projects/playclip.webp"
+            description="A video steaming platform to view gaming highlights in community."
+            techs={["TypeScript", "GCP", "React", "Firebase", "FFMPEG"]}
+            link="https://github.com/Potato052/PlayClip"
           />
           <ProjectItem
             title="Mysh"
             image="/projects/terminal.jpg"
             description="C-powered shell supporting basic commands, piping, redirection and background processes."
             techs={["C"]}
-            link="#"
+            link="https://github.com/Potato052/MyShell"
           />
           <ProjectItem
             title="Personal Website"
